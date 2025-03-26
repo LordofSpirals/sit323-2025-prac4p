@@ -25,7 +25,7 @@ app.get("/add/:num1/:num2", (req, res) => {
         result = numA + numB;
         console.log(result);
     
-        res.send(String(result)); // Returns as string, otherwise interpreted as an HTTP error code
+        res.send(String(result)); // Returns as string, otherwise interpreted as an HTTP status code
     }
 })
 
@@ -47,7 +47,7 @@ app.get("/sub/:num1/:num2", (req, res) => {
         result = numA - numB;
         console.log(result);
     
-        res.send(String(result)); // Returns as string, otherwise interpreted as an HTTP error code
+        res.send(String(result)); // Returns as string, otherwise interpreted as an HTTP status code
     }
 })
 
@@ -69,7 +69,7 @@ app.get("/mult/:num1/:num2", (req, res) => {
         result = numA * numB;
         console.log(result);
     
-        res.send(String(result)); // Returns as string, otherwise interpreted as an HTTP error code
+        res.send(String(result)); // Returns as string, otherwise interpreted as an HTTP status code
     }
 })
 
@@ -91,7 +91,7 @@ app.get("/div/:num1/:num2", (req, res) => {
         result = numA / numB;
         console.log(result);
     
-        res.send(String(result)); // Returns as string, otherwise interpreted as an HTTP error code
+        res.send(String(result)); // Returns as string, otherwise interpreted as an HTTP status code
     }
 })
 
